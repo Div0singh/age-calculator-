@@ -89,6 +89,11 @@
   .container p{
    font-size: 20px;
   }
+  .container .error{
+    color: red;
+    font-weight: normal;
+    display: none;
+  }
   .container p p{
    text-align: center;
   }
