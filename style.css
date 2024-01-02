@@ -48,6 +48,12 @@
    font-weight: bold;
    font-size: 17px;
  }
+ .container form .valid{
+  box-shadow: 0px 0px 10px 2px rgb(0, 245, 53);
+}
+ .container form .invalid{
+  box-shadow: 0px 0px 10px 2px red;
+}
  .container form input{
    position: relative;
    width: 70%;
@@ -88,7 +94,6 @@
   }
   .container p{
    font-size: 20px;
-   text-align:center;
   }
   .container .error{
     color: red;
@@ -140,3 +145,4 @@
    
     }
   }
+   
