@@ -6,14 +6,19 @@ btn.addEventListener('click', ()=>{
    let user_values = new Date(value);
    if(time < user_values){
       document.getElementById("invalid").style.display = "block";
+      document.getElementById("invalid").innerText = "Please Enter Valid Date";
+      document.getElementById("user_value").classList.add('invalid');
    }
    else if(value == 0){
-document.getElementById("invalid").innertext = "Please Enter Birth of Date";
-   
+      document.getElementById("invalid").style.display = "block";
+      document.getElementById("invalid").innerText = "Please Enter Date";
+      document.getElementById("user_value").classList.add('invalid');
 
    }
    else{
    // common dates
+   document.getElementById("user_value").classList.remove('invalid');
+   document.getElementById("user_value").classList.add('valid');
    document.getElementById("invalid").style.display = "none";
    let commonDate = time.getDate();
    let commonMonth = time.getMonth()+1;
