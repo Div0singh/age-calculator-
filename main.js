@@ -8,7 +8,8 @@ btn.addEventListener('click', ()=>{
       document.getElementById("invalid").style.display = "block";
    }
    else if(value == 0){
-
+document.getElementById("invalid").innertext = "Please Enter Birth of Date";
+   
 
    }
    else{
