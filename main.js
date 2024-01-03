@@ -33,6 +33,6 @@ btn.addEventListener('click', ()=>{
    let year = commonYear- user_Year;
    let totalDays=(year*365)+(month*30)+date;
    let totalHours = totalDays*24;
-   result.innerHTML  = `Your Age : ${year} Years ${month} Months ${date} Days <p>Total Days : ${totalDays} <br>Total Hours : ${totalHours}</p>`;
+   result.innerHTML  = `Your Age : ${year} Years ${month} Months ${date} Days <p>Total ${totalDays} Days ${totalHours} Hours</p>`;
 }
 })
